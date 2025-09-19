@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Login</title>
+    <link rel="stylesheet" href="sih.css">
+    <script src="sih.js" defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>🧑‍🌾 Farmer Login</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" title="Mobile number must be 10 digits">
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8" title="Password must be at least 8 characters long">
+            </div>
+            <button type="submit">Log In</button>
+        </form>
+        <p id="error-message" style="color: red; margin-top: 10px; display: none;"></p>
+    </div>
+</body>
+</html>
